@@ -40,6 +40,6 @@ assign data2=(src2==5'b00000) ?32'b0 : x[src2];
 
 always@(posedge clk)begin
 if(rd==1'b1 && dest!=5'b0)
- x[dest]<=rs;
+ x[dest]<=rs; // result data to destination location
  end
 endmodule
