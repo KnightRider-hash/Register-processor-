@@ -16,10 +16,10 @@ Supports simultaneous dual-port read and single-port synchronous write, with har
 | `clk`   | Input     | `1`      | Clock signal (write on rising edge)                 |
 
 ## Behavior ##
-* Read (Asynchronous / Combinational)
+* Read (Asynchronous / Combinational)-
 data1 and data2 are continuously driven based on src1 and src2.
 Reading from register x0 (5'b00000) always returns 32'b0, regardless of any write — this mirrors the hardwired-zero convention in RISC-V.
 
-* Write (Synchronous)
+* Write (Synchronous)-
 On the rising edge of clk, if rd == 1 and dest != 0, the value on rs is written to x[dest].
 Writes to x0 are ignored to preserve the hardwired-zero property.
