@@ -1,3 +1,5 @@
+> **⚠️ NOTE: This repository has been archived. This module has been successfully integrated into a complete 32-bit RISC-V CPU. Please see the master project here: [RV32I-Single-Cycle-Core](https://github.com/KnightRider-hash/RV32I-Single-Cycle-Core)**
+
 # Register File — RISC-Style 32×32 Register Bank #
 A synthesizable Verilog module implementing a 32-entry,
 32-bit register file commonly used in RISC-style processor designs . 
